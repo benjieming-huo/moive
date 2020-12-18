@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+  <!-- 这是轮播图的部分 -->
  <Header></Header>
   <Footer></Footer>
     <router-view/>

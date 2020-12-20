@@ -1,7 +1,8 @@
 <template>
   <div id="app">
   <!-- 这是轮播图的部分 -->
- <Header></Header>
+<!-- <Header></Header> -->
+ 
   <Footer></Footer>
     <router-view/>
   </div>
@@ -10,7 +11,8 @@
 <!-- //测试代码可用性 -->
 <script>
 import Footer from "@/components/Navigation/Footer";
-import Header from "@/components/Navigation/header";
+// import Header from "@/components/Navigation/header";
+
 // import uri from  "@/config/uri";
 
 
@@ -21,7 +23,8 @@ export default {
   // }
   components:{
     Footer,
-    Header,
+    // Header,
+   
   }
 }
 </script>

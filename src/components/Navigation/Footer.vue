@@ -35,11 +35,13 @@ export default {
     data() {
     return {
       active: 0,
-      url:["/films","/cinemas","/center"]
+      url:["/films/nowplaying","/cinemas","/center"]
     };
   },
   created(){
-      this.active=this.url.indexOf(this.$router.path)
+      this.active=this.url.indexOf(this.$route.path)>= 0
+                ? this.url.indexOf(this.$route.path)
+                : 0;
       // console.log(this.$route.path);
       console.log(this.$route);
   },
